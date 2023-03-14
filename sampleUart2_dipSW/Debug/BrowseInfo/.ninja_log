@@ -1,0 +1,13 @@
+# ninja log v5
+1	69	7001304520000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_dipSW/Debug/BrowseInfo/COMM/system_stm32f4xx.xcl	f581885953a0b57e
+4	75	7001304520000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_dipSW/Debug/BrowseInfo/COMM/stm32f4xx_it.xcl	8464146f46a97978
+7	82	7001304520000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_dipSW/Debug/BrowseInfo/STM32/stm32f4xx_usart.xcl	989af8ae273a80e4
+9	85	7001304520000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_dipSW/Debug/BrowseInfo/main.xcl	962dc9601fc34fda
+71	140	7001304520000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_dipSW/Debug/BrowseInfo/STM32/misc.xcl	cf2d1f6dcf3b7e17
+76	143	7001304520000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_dipSW/Debug/BrowseInfo/STM32/stm32f4xx_rcc.xcl	6fc12de328ce48d1
+82	150	7001304520000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_dipSW/Debug/BrowseInfo/STM32/stm32f4xx_gpio.xcl	3a7de304e2441084
+140	203	7001304530000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_dipSW/Debug/BrowseInfo/uart2.xcl	8bd86d494afc4626
+85	228	7001304530514468	C:/Users/IoT17/Desktop/Examples/sampleUart2_dipSW/Debug/BrowseInfo/COMM/system_stm32f4xx.pbi	28fe726a6f5ba02
+204	231	7001304530514468	C:/Users/IoT17/Desktop/Examples/sampleUart2_dipSW/Debug/BrowseInfo/COMM/stm32f4xx_it.pbi	b8f62ef72090b498
+144	270	7001304530826893	C:/Users/IoT17/Desktop/Examples/sampleUart2_dipSW/Debug/BrowseInfo/STM32/misc.pbi	b9af21369ff69db0
+150	280	7001304530983110	C:/Users/IoT17/Desktop/Examples/sampleUart2_dipSW/Debug/BrowseInfo/STM32/stm32f4xx_gpio.pbi	218605033c0cc236

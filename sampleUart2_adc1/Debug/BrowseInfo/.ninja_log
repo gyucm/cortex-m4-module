@@ -1,0 +1,44 @@
+# ninja log v5
+537	1016	6999788793153479	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_adc1/Debug/BrowseInfo/sampleUart2.pbd	25758144fb31f2e
+824	2090	6999779340000000	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_adc1/Debug/BrowseInfo/uart2.xcl	f7cb91263533e885
+769	2124	6999779340000000	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_adc1/Debug/BrowseInfo/COMM/system_stm32f4xx.xcl	7bd83f414edde33d
+2134	2633	6999779353551999	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_adc1/Debug/BrowseInfo/COMM/system_stm32f4xx.pbi	cb744da3c3e978c4
+17	2144	6999779340000000	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_adc1/Debug/BrowseInfo/COMM/stm32f4xx_it.xcl	d3f8eced5f8ad195
+31	532	6999788788310925	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_adc1/Debug/BrowseInfo/main.pbi	e90556fcbb7f668d
+2152	2241	6999779349647080	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_adc1/Debug/BrowseInfo/COMM/stm32f4xx_it.pbi	2ad309b9829cced3
+798	2715	6999779350000000	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_adc1/Debug/BrowseInfo/main.xcl	b2855e0814223253
+2105	2629	6999779353551999	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_adc1/Debug/BrowseInfo/uart2.pbi	2c9d6baa6d9df10e
+1022	3032	6999788812995589	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_adc1/Debug/BrowseInfo/sampleUart2.pbw	60e9d9f011772cfb
+8	418	6999788920779584	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_adc1/Debug/BrowseInfo/main.pbi	e90556fcbb7f668d
+423	972	6999788926403256	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_adc1/Debug/BrowseInfo/sampleUart2.pbd	25758144fb31f2e
+976	3080	6999788947191224	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_adc1/Debug/BrowseInfo/sampleUart2.pbw	60e9d9f011772cfb
+13	485	6999789358183569	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_adc1/Debug/BrowseInfo/main.pbi	e90556fcbb7f668d
+493	1220	6999789365525631	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_adc1/Debug/BrowseInfo/sampleUart2.pbd	25758144fb31f2e
+1225	3257	6999789385521291	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_adc1/Debug/BrowseInfo/sampleUart2.pbw	60e9d9f011772cfb
+13	548	6999791617962360	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_adc1/Debug/BrowseInfo/main.pbi	e90556fcbb7f668d
+556	1299	6999791625460533	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_adc1/Debug/BrowseInfo/sampleUart2.pbd	25758144fb31f2e
+1305	3289	6999791644991588	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_adc1/Debug/BrowseInfo/sampleUart2.pbw	60e9d9f011772cfb
+16	529	6999791753399065	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_adc1/Debug/BrowseInfo/main.pbi	e90556fcbb7f668d
+13	82	7001319280000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_adc1/Debug/BrowseInfo/COMM/system_stm32f4xx.xcl	67d8554c18586c32
+16	89	7001319280000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_adc1/Debug/BrowseInfo/COMM/stm32f4xx_it.xcl	64810855b27db288
+23	94	7001319280000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_adc1/Debug/BrowseInfo/STM32/stm32f4xx_adc.xcl	4473351045a79017
+20	113	7001319280000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_adc1/Debug/BrowseInfo/STM32/stm32f4xx_rcc.xcl	242762cc0af6361e
+84	147	7001319280000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_adc1/Debug/BrowseInfo/STM32/misc.xcl	466d86794198723
+89	154	7001319280000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_adc1/Debug/BrowseInfo/STM32/stm32f4xx_gpio.xcl	4c02f91bcb7dfec2
+95	159	7001319280000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_adc1/Debug/BrowseInfo/uart2.xcl	b1f8f87aa05991a0
+114	173	7001319280000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_adc1/Debug/BrowseInfo/main.xcl	67610be683382a28
+174	198	7001319288063053	C:/Users/IoT17/Desktop/Examples/sampleUart2_adc1/Debug/BrowseInfo/COMM/stm32f4xx_it.pbi	54f15f0038021966
+199	254	7001319280000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_adc1/Debug/BrowseInfo/STM32/stm32f4xx_usart.xcl	db857e6c81f31657
+155	278	7001319289000341	C:/Users/IoT17/Desktop/Examples/sampleUart2_adc1/Debug/BrowseInfo/STM32/misc.pbi	efd670887ce26b8
+148	282	7001319289000341	C:/Users/IoT17/Desktop/Examples/sampleUart2_adc1/Debug/BrowseInfo/COMM/system_stm32f4xx.pbi	7cce16e8c80a1ab6
+159	286	7001319289000341	C:/Users/IoT17/Desktop/Examples/sampleUart2_adc1/Debug/BrowseInfo/uart2.pbi	be8c5654a2b21969
+254	376	7001319289937615	C:/Users/IoT17/Desktop/Examples/sampleUart2_adc1/Debug/BrowseInfo/main.pbi	6a7bee3ecd7687a4
+283	404	7001319290250386	C:/Users/IoT17/Desktop/Examples/sampleUart2_adc1/Debug/BrowseInfo/STM32/stm32f4xx_usart.pbi	9e8ff332cff4898c
+280	407	7001319290250386	C:/Users/IoT17/Desktop/Examples/sampleUart2_adc1/Debug/BrowseInfo/STM32/stm32f4xx_rcc.pbi	8cd276e21de2df9b
+287	410	7001319290250386	C:/Users/IoT17/Desktop/Examples/sampleUart2_adc1/Debug/BrowseInfo/STM32/stm32f4xx_adc.pbi	ea481efd1626b5d4
+408	476	7001319290874885	C:/Users/IoT17/Desktop/Examples/sampleUart2_adc1/Debug/BrowseInfo/sampleUart2_part0.pbi	e73a1d5bca535e40
+377	494	7001319291031749	C:/Users/IoT17/Desktop/Examples/sampleUart2_adc1/Debug/BrowseInfo/STM32/stm32f4xx_gpio.pbi	e3680e2a808978e2
+405	497	7001319291187589	C:/Users/IoT17/Desktop/Examples/sampleUart2_adc1/Debug/BrowseInfo/sampleUart2_part2.pbi	2ce866c5742ce4bd
+495	585	7001319291968373	C:/Users/IoT17/Desktop/Examples/sampleUart2_adc1/Debug/BrowseInfo/sampleUart2_part1.pbi	9b21a2eff18605fd
+585	661	7001319292750036	C:/Users/IoT17/Desktop/Examples/sampleUart2_adc1/Debug/BrowseInfo/sampleUart2.pbd	4bfc4cdcae40e760
+662	1232	7001319298216895	C:/Users/IoT17/Desktop/Examples/sampleUart2_adc1/Debug/BrowseInfo/sampleUart2.pbw	1f30f99e1fe92ec3

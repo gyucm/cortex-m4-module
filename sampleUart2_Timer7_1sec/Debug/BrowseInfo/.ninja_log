@@ -1,0 +1,24 @@
+# ninja log v5
+1	74	7001253960000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_Timer7_1sec/Debug/BrowseInfo/main.xcl	da08ca93d63b9f75
+4	79	7001253960000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_Timer7_1sec/Debug/BrowseInfo/COMM/system_stm32f4xx.xcl	989e69a624751
+10	83	7001253960000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_Timer7_1sec/Debug/BrowseInfo/STM32/stm32f4xx_gpio.xcl	2e096fcfd4f2e132
+7	89	7001253960000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_Timer7_1sec/Debug/BrowseInfo/COMM/stm32f4xx_it.xcl	1bbc6c4395135182
+75	145	7001253960000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_Timer7_1sec/Debug/BrowseInfo/STM32/stm32f4xx_tim.xcl	721c38fcce1b4372
+80	160	7001253960000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_Timer7_1sec/Debug/BrowseInfo/STM32/stm32f4xx_usart.xcl	bc95a024e598c707
+90	163	7001253960000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_Timer7_1sec/Debug/BrowseInfo/STM32/stm32f4xx_rcc.xcl	9892abd66db2b05c
+85	185	7001253960000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_Timer7_1sec/Debug/BrowseInfo/STM32/misc.xcl	be766d84864b1f60
+160	188	7001253964902396	C:/Users/IoT17/Desktop/Examples/sampleUart2_Timer7_1sec/Debug/BrowseInfo/COMM/stm32f4xx_it.pbi	d751f493d264d35e
+185	247	7001253960000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_Timer7_1sec/Debug/BrowseInfo/uart2.xcl	2dd79fcf565a9a5c
+145	281	7001253965839681	C:/Users/IoT17/Desktop/Examples/sampleUart2_Timer7_1sec/Debug/BrowseInfo/COMM/system_stm32f4xx.pbi	9722592dda2ada4e
+163	298	7001253965995881	C:/Users/IoT17/Desktop/Examples/sampleUart2_Timer7_1sec/Debug/BrowseInfo/STM32/stm32f4xx_rcc.pbi	7a94b0cf5640a434
+188	321	7001253966308314	C:/Users/IoT17/Desktop/Examples/sampleUart2_Timer7_1sec/Debug/BrowseInfo/STM32/stm32f4xx_gpio.pbi	58b71479fc52aaac
+247	371	7001253966776960	C:/Users/IoT17/Desktop/Examples/sampleUart2_Timer7_1sec/Debug/BrowseInfo/STM32/misc.pbi	4ef79888a1f7f312
+298	426	7001253967246248	C:/Users/IoT17/Desktop/Examples/sampleUart2_Timer7_1sec/Debug/BrowseInfo/main.pbi	e9517cef2b0cb7a0
+322	449	7001253967558011	C:/Users/IoT17/Desktop/Examples/sampleUart2_Timer7_1sec/Debug/BrowseInfo/uart2.pbi	f9f9e440f99dcf2e
+427	498	7001253968026648	C:/Users/IoT17/Desktop/Examples/sampleUart2_Timer7_1sec/Debug/BrowseInfo/sampleUart2_part0.pbi	878ac683100df5b4
+371	502	7001253968026648	C:/Users/IoT17/Desktop/Examples/sampleUart2_Timer7_1sec/Debug/BrowseInfo/STM32/stm32f4xx_usart.pbi	8f32403b81210239
+281	529	7001253968339073	C:/Users/IoT17/Desktop/Examples/sampleUart2_Timer7_1sec/Debug/BrowseInfo/STM32/stm32f4xx_tim.pbi	f07bc7f8de473405
+503	598	7001253968963926	C:/Users/IoT17/Desktop/Examples/sampleUart2_Timer7_1sec/Debug/BrowseInfo/sampleUart2_part2.pbi	9487672f42f80241
+530	630	7001253969276353	C:/Users/IoT17/Desktop/Examples/sampleUart2_Timer7_1sec/Debug/BrowseInfo/sampleUart2_part1.pbi	be49d1c84ea24ff6
+631	714	7001253970213634	C:/Users/IoT17/Desktop/Examples/sampleUart2_Timer7_1sec/Debug/BrowseInfo/sampleUart2.pbd	6548c478636ef288
+715	1298	7001253975837296	C:/Users/IoT17/Desktop/Examples/sampleUart2_Timer7_1sec/Debug/BrowseInfo/sampleUart2.pbw	621a120798322e25

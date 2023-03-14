@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>5</fileVersion>
+    <fileChecksum>2987694528</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\..\..\..\..\..\Program Files\IAR Systems\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Program Files\IAR Systems\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_ltdc.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Program Files\IAR Systems\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Program Files\IAR Systems\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Full.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Program Files\IAR Systems\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h</file>
+            <file>$TOOLKIT_DIR$\CMSIS\Core\Include\cmsis_version.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Program Files\IAR Systems\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sai.h</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+            <file>$PROJ_DIR$\stm32f4xx_it.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Program Files\IAR Systems\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma2d.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Program Files\IAR Systems\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dac.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Program Files\IAR Systems\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Program Files\IAR Systems\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rng.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Program Files\IAR Systems\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h</file>
+            <file>$TOOLKIT_DIR$\CMSIS\Core\Include\cmsis_compiler.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Program Files\IAR Systems\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_cryp.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Program Files\IAR Systems\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_hash.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Program Files\IAR Systems\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fmc.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Program Files\IAR Systems\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_gpio.c</file>
+            <file>$PROJ_DIR$\main.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Program Files\IAR Systems\Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\iar\startup_stm32f429_439xx.s</file>
+            <file>$PROJ_DIR$\system_stm32f4xx.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Program Files\IAR Systems\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rcc.c</file>
+            <file>$PROJ_DIR$\stm32f4xx_it.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\Debug\Exe\sample.hex</file>
+            <file>$PROJ_DIR$\Debug\Exe\c.out</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\STM32\stm32f4xx_rcc.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\CMSIS\startup_stm32f429_439xx.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\COMM\system_stm32f4xx.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\aarch32\iccarm_builtin.h</file>
+            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+            <file>$PROJ_DIR$\stm32f429xG.icf</file>
+            <file>$TOOLKIT_DIR$\CMSIS\Core\Include\cmsis_iccarm.h</file>
+            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+            <file>$PROJ_DIR$\stm32f4xx_conf.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Program Files\IAR Systems\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\COMM\stm32f4xx_it.o</file>
+            <file>$TOOLKIT_DIR$\CMSIS\Core\Include\mpu_armv7.h</file>
+            <file>$TOOLKIT_DIR$\CMSIS\Core\Include\core_cm4.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\STM32\stm32f4xx_gpio.o</file>
+            <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+        </outputs>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 30</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\Program Files\IAR Systems\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_gpio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 45</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 3 5 44 31 22 47 13 4 28 6 16 38 35 43 15 40 2 41 17 18 14 12 11 0 10 19 1 7</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 27</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 5 44 31 22 47 13 4 28 6 16 38 35 43 15 40 3 2 41 17 18 14 12 11 0 10 19 1 7</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\Program Files\IAR Systems\Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\iar\startup_stm32f429_439xx.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 33</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\system_stm32f4xx.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 34</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 5 44 31 22 47 13 4 28 6 16 38 35 43 15 40 3 2 41 17 18 14 12 11 0 10 19 1 7</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\Program Files\IAR Systems\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rcc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 32</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 2 5 44 31 22 47 13 4 28 6 16 38 35 43 15 40 3 41 17 18 14 12 11 0 10 19 1 7</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\stm32f4xx_it.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 42</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 9</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\c.out</name>
+            <outputs>
+                <tool>
+                    <name>OBJCOPY</name>
+                    <file> 29</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 37 27 33 45 42 32 34 8 36 46 39</file>
+                </tool>
+            </inputs>
+        </file>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+    </configuration>
+</project>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>5</fileVersion>
+    <fileChecksum>2054508986</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\system_stm32f4xx.c</file>
+            <file>$PROJ_DIR$\stm32f4xx_it.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Program Files\IAR Systems\Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\iar\startup_stm32f40_41xxx.s</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Program Files\IAR Systems\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_gpio.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Program Files\IAR Systems\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rcc.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Program Files\IAR Systems\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_tim.c</file>
+            <file>$PROJ_DIR$\main.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Program Files\IAR Systems\Libraries\STM32F4xx_StdPeriph_Driver\src\misc.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Program Files\IAR Systems\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_usart.c</file>
+            <file>$PROJ_DIR$\uart2.c</file>
+            <file>$PROJ_DIR$\tim7_fnd.c</file>
+        </outputs>
+        <forcedrebuild>
+            <name>[REBUILD_ALL]</name>
+        </forcedrebuild>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>[REBUILD_ALL]</name>
+        </forcedrebuild>
+    </configuration>
+</project>

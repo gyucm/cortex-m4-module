@@ -1,0 +1,143 @@
+##IAR Ninja build file
+
+
+#Rules
+rule COMPILER_XCL
+  command = "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\XclFileGenerator.exe" $xclcommand -f "$rspfile_name"
+  description = IAR_NEW_TOOL+++COMPILER_XCL+++$in
+  rspfile = $rspfile_name
+  rspfile_content = $flags
+
+rule INDEXER
+  command = "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\SourceIndexer.exe" $flags
+  depfile = $out.dep
+  description = IAR_NEW_TOOL+++INDEXER+++$out
+
+rule MAKEBROWSE
+  command = "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\makeBrowseData.exe" $flags
+  description = IAR_NEW_TOOL+++MAKEBROWSE+++$out
+
+rule PDBLINK
+  command = "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\PbdLink.exe" $flags
+  description = IAR_NEW_TOOL+++PDBLINK+++$out
+
+
+
+#Build steps
+build \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\COMM\stm32f4xx_it.xcl : COMPILER_XCL 
+  xclcommand = -source_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\stm32f4xx_it.c" -xcl_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\COMM\stm32f4xx_it.xcl" -macro_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\COMM\stm32f4xx_it.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\stm32f4xx_it.c" -D USE_STDPERIPH_DRIVER -D STM32F40_41xxx -o "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\Obj\COMM" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Full.h" -I "C$:\Program$ Files\IAR$ Systems\Libraries\CMSIS\Device\ST\STM32F4xx\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Libraries\STM32F4xx_StdPeriph_Driver\inc\\" -I "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\\" -Ol -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\CMSIS\Core\Include\\" --predef_macros "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\COMM\stm32f4xx_it.tmp"
+  rspfile_name = \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\COMM\stm32f4xx_it.xcl.rsp
+
+build \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\COMM\system_stm32f4xx.xcl : COMPILER_XCL 
+  xclcommand = -source_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\system_stm32f4xx.c" -xcl_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\COMM\system_stm32f4xx.xcl" -macro_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\COMM\system_stm32f4xx.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\system_stm32f4xx.c" -D USE_STDPERIPH_DRIVER -D STM32F40_41xxx -o "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\Obj\COMM" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Full.h" -I "C$:\Program$ Files\IAR$ Systems\Libraries\CMSIS\Device\ST\STM32F4xx\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Libraries\STM32F4xx_StdPeriph_Driver\inc\\" -I "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\\" -Ol -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\CMSIS\Core\Include\\" --predef_macros "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\COMM\system_stm32f4xx.tmp"
+  rspfile_name = \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\COMM\system_stm32f4xx.xcl.rsp
+
+build \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\adc1.xcl : COMPILER_XCL 
+  xclcommand = -source_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\adc1.c" -xcl_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\adc1.xcl" -macro_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\adc1.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\adc1.c" -D USE_STDPERIPH_DRIVER -D STM32F40_41xxx -o "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Full.h" -I "C$:\Program$ Files\IAR$ Systems\Libraries\CMSIS\Device\ST\STM32F4xx\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Libraries\STM32F4xx_StdPeriph_Driver\inc\\" -I "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\\" -Ol -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\CMSIS\Core\Include\\" --predef_macros "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\adc1.tmp"
+  rspfile_name = \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\adc1.xcl.rsp
+
+build \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\key.xcl : COMPILER_XCL 
+  xclcommand = -source_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\key.c" -xcl_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\key.xcl" -macro_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\key.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\key.c" -D USE_STDPERIPH_DRIVER -D STM32F40_41xxx -o "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Full.h" -I "C$:\Program$ Files\IAR$ Systems\Libraries\CMSIS\Device\ST\STM32F4xx\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Libraries\STM32F4xx_StdPeriph_Driver\inc\\" -I "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\\" -Ol -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\CMSIS\Core\Include\\" --predef_macros "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\key.tmp"
+  rspfile_name = \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\key.xcl.rsp
+
+build \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\main.xcl : COMPILER_XCL 
+  xclcommand = -source_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\main.c" -xcl_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\main.xcl" -macro_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\main.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\main.c" -D USE_STDPERIPH_DRIVER -D STM32F40_41xxx -o "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Full.h" -I "C$:\Program$ Files\IAR$ Systems\Libraries\CMSIS\Device\ST\STM32F4xx\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Libraries\STM32F4xx_StdPeriph_Driver\inc\\" -I "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\\" -Ol -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\CMSIS\Core\Include\\" --predef_macros "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\main.tmp"
+  rspfile_name = \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\main.xcl.rsp
+
+build \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\tim10_motor.xcl : COMPILER_XCL 
+  xclcommand = -source_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\tim10_motor.c" -xcl_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\tim10_motor.xcl" -macro_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\tim10_motor.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\tim10_motor.c" -D USE_STDPERIPH_DRIVER -D STM32F40_41xxx -o "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Full.h" -I "C$:\Program$ Files\IAR$ Systems\Libraries\CMSIS\Device\ST\STM32F4xx\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Libraries\STM32F4xx_StdPeriph_Driver\inc\\" -I "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\\" -Ol -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\CMSIS\Core\Include\\" --predef_macros "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\tim10_motor.tmp"
+  rspfile_name = \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\tim10_motor.xcl.rsp
+
+build \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\tim1_counter.xcl : COMPILER_XCL 
+  xclcommand = -source_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\tim1_counter.c" -xcl_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\tim1_counter.xcl" -macro_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\tim1_counter.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\tim1_counter.c" -D USE_STDPERIPH_DRIVER -D STM32F40_41xxx -o "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Full.h" -I "C$:\Program$ Files\IAR$ Systems\Libraries\CMSIS\Device\ST\STM32F4xx\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Libraries\STM32F4xx_StdPeriph_Driver\inc\\" -I "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\\" -Ol -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\CMSIS\Core\Include\\" --predef_macros "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\tim1_counter.tmp"
+  rspfile_name = \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\tim1_counter.xcl.rsp
+
+build \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\tim7_fnd.xcl : COMPILER_XCL 
+  xclcommand = -source_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\tim7_fnd.c" -xcl_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\tim7_fnd.xcl" -macro_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\tim7_fnd.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\tim7_fnd.c" -D USE_STDPERIPH_DRIVER -D STM32F40_41xxx -o "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Full.h" -I "C$:\Program$ Files\IAR$ Systems\Libraries\CMSIS\Device\ST\STM32F4xx\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Libraries\STM32F4xx_StdPeriph_Driver\inc\\" -I "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\\" -Ol -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\CMSIS\Core\Include\\" --predef_macros "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\tim7_fnd.tmp"
+  rspfile_name = \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\tim7_fnd.xcl.rsp
+
+build \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\uart2.xcl : COMPILER_XCL 
+  xclcommand = -source_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\uart2.c" -xcl_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\uart2.xcl" -macro_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\uart2.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\uart2.c" -D USE_STDPERIPH_DRIVER -D STM32F40_41xxx -o "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Full.h" -I "C$:\Program$ Files\IAR$ Systems\Libraries\CMSIS\Device\ST\STM32F4xx\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Libraries\STM32F4xx_StdPeriph_Driver\inc\\" -I "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\\" -Ol -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\CMSIS\Core\Include\\" --predef_macros "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\uart2.tmp"
+  rspfile_name = \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\uart2.xcl.rsp
+
+build \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\uart4.xcl : COMPILER_XCL 
+  xclcommand = -source_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\uart4.c" -xcl_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\uart4.xcl" -macro_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\uart4.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\uart4.c" -D USE_STDPERIPH_DRIVER -D STM32F40_41xxx -o "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Full.h" -I "C$:\Program$ Files\IAR$ Systems\Libraries\CMSIS\Device\ST\STM32F4xx\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Libraries\STM32F4xx_StdPeriph_Driver\inc\\" -I "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\\" -Ol -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\CMSIS\Core\Include\\" --predef_macros "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\uart4.tmp"
+  rspfile_name = \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\uart4.xcl.rsp
+
+build \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\COMM\stm32f4xx_it.pbi : INDEXER \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\COMM\stm32f4xx_it.xcl |  $
+\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\stm32f4xx_it.c
+  flags = "-out=\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\COMM\stm32f4xx_it.pbi" -f "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\COMM\stm32f4xx_it.xcl"
+
+build \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\COMM\system_stm32f4xx.pbi : INDEXER \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\COMM\system_stm32f4xx.xcl |  $
+\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\system_stm32f4xx.c
+  flags = "-out=\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\COMM\system_stm32f4xx.pbi" -f "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\COMM\system_stm32f4xx.xcl"
+
+build \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\adc1.pbi : INDEXER \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\adc1.xcl |  $
+\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\adc1.c
+  flags = "-out=\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\adc1.pbi" -f "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\adc1.xcl"
+
+build \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\key.pbi : INDEXER \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\key.xcl |  $
+\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\key.c
+  flags = "-out=\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\key.pbi" -f "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\key.xcl"
+
+build \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\main.pbi : INDEXER \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\main.xcl |  $
+\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\main.c
+  flags = "-out=\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\main.pbi" -f "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\main.xcl"
+
+build \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\tim10_motor.pbi : INDEXER \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\tim10_motor.xcl |  $
+\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\tim10_motor.c
+  flags = "-out=\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\tim10_motor.pbi" -f "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\tim10_motor.xcl"
+
+build \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\tim1_counter.pbi : INDEXER \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\tim1_counter.xcl |  $
+\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\tim1_counter.c
+  flags = "-out=\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\tim1_counter.pbi" -f "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\tim1_counter.xcl"
+
+build \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\tim7_fnd.pbi : INDEXER \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\tim7_fnd.xcl |  $
+\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\tim7_fnd.c
+  flags = "-out=\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\tim7_fnd.pbi" -f "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\tim7_fnd.xcl"
+
+build \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\uart2.pbi : INDEXER \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\uart2.xcl |  $
+\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\uart2.c
+  flags = "-out=\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\uart2.pbi" -f "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\uart2.xcl"
+
+build \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\uart4.pbi : INDEXER \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\uart4.xcl |  $
+\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\uart4.c
+  flags = "-out=\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\uart4.pbi" -f "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\uart4.xcl"
+
+build \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\sampleUart2.pbw : MAKEBROWSE \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\sampleUart2.pbd
+  flags = "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\sampleUart2.pbd" -output "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\sampleUart2.pbw"
+
+build \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\sampleUart2_part0.pbi : PDBLINK \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\COMM\stm32f4xx_it.pbi |  $
+\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\COMM\system_stm32f4xx.pbi $
+\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\adc1.pbi
+  flags = -M "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\sampleUart2_part0.pbi" "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\COMM\stm32f4xx_it.pbi" "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\COMM\system_stm32f4xx.pbi" "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\adc1.pbi"
+
+build \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\sampleUart2_part1.pbi : PDBLINK \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\key.pbi |  $
+\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\main.pbi $
+\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\tim10_motor.pbi
+  flags = -M "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\sampleUart2_part1.pbi" "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\key.pbi" "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\main.pbi" "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\tim10_motor.pbi"
+
+build \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\sampleUart2_part2.pbi : PDBLINK \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\tim1_counter.pbi |  $
+\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\tim7_fnd.pbi $
+\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\uart2.pbi
+  flags = -M "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\sampleUart2_part2.pbi" "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\tim1_counter.pbi" "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\tim7_fnd.pbi" "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\uart2.pbi"
+
+build \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\sampleUart2_part3.pbi : PDBLINK \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\uart4.pbi
+  flags = -M "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\sampleUart2_part3.pbi" "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\uart4.pbi"
+
+build \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\sampleUart2.pbd : PDBLINK \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\sampleUart2_part0.pbi |  $
+\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\sampleUart2_part1.pbi $
+\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\sampleUart2_part2.pbi $
+\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\sampleUart2_part3.pbi
+  flags = -M "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\sampleUart2.pbd" "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\sampleUart2_part0.pbi" "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\sampleUart2_part1.pbi" "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\sampleUart2_part2.pbi" "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_project_split_ksh\Debug\BrowseInfo\sampleUart2_part3.pbi"
+

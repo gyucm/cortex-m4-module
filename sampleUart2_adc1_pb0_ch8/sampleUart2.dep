@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>5</fileVersion>
+    <fileChecksum>2763247454</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\Debug\Obj\STM32\stm32f4xx_rcc.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\COMM\stm32f4xx_it.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\STM32\misc.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\STM32\stm32f4xx_usart.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\STM32\stm32f4xx_adc.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\COMM\system_stm32f4xx.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Program Files\IAR Systems\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_gpio.c</file>
+            <file>$PROJ_DIR$\main.c</file>
+            <file>$PROJ_DIR$\stm32f4xx_it.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Program Files\IAR Systems\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_usart.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Program Files\IAR Systems\Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\iar\startup_stm32f40_41xxx.s</file>
+            <file>$PROJ_DIR$\Debug\Obj\uart2.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Program Files\IAR Systems\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_adc.c</file>
+            <file>$PROJ_DIR$\uart2.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\STM32\stm32f4xx_gpio.o</file>
+            <file>$PROJ_DIR$\system_stm32f4xx.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Program Files\IAR Systems\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rcc.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\Program Files\IAR Systems\Libraries\STM32F4xx_StdPeriph_Driver\src\misc.c</file>
+        </outputs>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\Program Files\IAR Systems\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_gpio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 15</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 12</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\stm32f4xx_it.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 1</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\Program Files\IAR Systems\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_usart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 3</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\Program Files\IAR Systems\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_adc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 4</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\uart2.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 11</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\system_stm32f4xx.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 5</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\Program Files\IAR Systems\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rcc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 0</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\Program Files\IAR Systems\Libraries\STM32F4xx_StdPeriph_Driver\src\misc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 2</file>
+                </tool>
+            </outputs>
+        </file>
+        <forcedrebuild>
+            <name>[REBUILD_ALL]</name>
+        </forcedrebuild>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>[REBUILD_ALL]</name>
+        </forcedrebuild>
+    </configuration>
+</project>

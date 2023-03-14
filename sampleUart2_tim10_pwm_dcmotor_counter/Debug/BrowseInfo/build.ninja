@@ -1,0 +1,71 @@
+##IAR Ninja build file
+
+
+#Rules
+rule COMPILER_XCL
+  command = "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\XclFileGenerator.exe" $xclcommand -f "$rspfile_name"
+  description = IAR_NEW_TOOL+++COMPILER_XCL+++$in
+  rspfile = $rspfile_name
+  rspfile_content = $flags
+
+rule INDEXER
+  command = "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\SourceIndexer.exe" $flags
+  depfile = $out.dep
+  description = IAR_NEW_TOOL+++INDEXER+++$out
+
+rule MAKEBROWSE
+  command = "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\makeBrowseData.exe" $flags
+  description = IAR_NEW_TOOL+++MAKEBROWSE+++$out
+
+rule PDBLINK
+  command = "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\PbdLink.exe" $flags
+  description = IAR_NEW_TOOL+++PDBLINK+++$out
+
+
+
+#Build steps
+build \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\COMM\stm32f4xx_it.xcl : COMPILER_XCL 
+  xclcommand = -source_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\stm32f4xx_it.c" -xcl_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\COMM\stm32f4xx_it.xcl" -macro_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\COMM\stm32f4xx_it.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\stm32f4xx_it.c" -D USE_STDPERIPH_DRIVER -D STM32F40_41xxx -o "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\Obj\COMM" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Full.h" -I "C$:\Program$ Files\IAR$ Systems\Libraries\CMSIS\Device\ST\STM32F4xx\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Libraries\STM32F4xx_StdPeriph_Driver\inc\\" -I "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\\" -Ol -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\CMSIS\Core\Include\\" --predef_macros "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\COMM\stm32f4xx_it.tmp"
+  rspfile_name = \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\COMM\stm32f4xx_it.xcl.rsp
+
+build \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\COMM\system_stm32f4xx.xcl : COMPILER_XCL 
+  xclcommand = -source_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\system_stm32f4xx.c" -xcl_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\COMM\system_stm32f4xx.xcl" -macro_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\COMM\system_stm32f4xx.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\system_stm32f4xx.c" -D USE_STDPERIPH_DRIVER -D STM32F40_41xxx -o "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\Obj\COMM" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Full.h" -I "C$:\Program$ Files\IAR$ Systems\Libraries\CMSIS\Device\ST\STM32F4xx\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Libraries\STM32F4xx_StdPeriph_Driver\inc\\" -I "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\\" -Ol -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\CMSIS\Core\Include\\" --predef_macros "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\COMM\system_stm32f4xx.tmp"
+  rspfile_name = \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\COMM\system_stm32f4xx.xcl.rsp
+
+build \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\main.xcl : COMPILER_XCL 
+  xclcommand = -source_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\main.c" -xcl_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\main.xcl" -macro_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\main.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\main.c" -D USE_STDPERIPH_DRIVER -D STM32F40_41xxx -o "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Full.h" -I "C$:\Program$ Files\IAR$ Systems\Libraries\CMSIS\Device\ST\STM32F4xx\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Libraries\STM32F4xx_StdPeriph_Driver\inc\\" -I "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\\" -Ol -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\CMSIS\Core\Include\\" --predef_macros "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\main.tmp"
+  rspfile_name = \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\main.xcl.rsp
+
+build \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\uart2.xcl : COMPILER_XCL 
+  xclcommand = -source_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\uart2.c" -xcl_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\uart2.xcl" -macro_file "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\uart2.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\uart2.c" -D USE_STDPERIPH_DRIVER -D STM32F40_41xxx -o "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Full.h" -I "C$:\Program$ Files\IAR$ Systems\Libraries\CMSIS\Device\ST\STM32F4xx\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Libraries\STM32F4xx_StdPeriph_Driver\inc\\" -I "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\\" -Ol -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\CMSIS\Core\Include\\" --predef_macros "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\uart2.tmp"
+  rspfile_name = \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\uart2.xcl.rsp
+
+build \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\COMM\stm32f4xx_it.pbi : INDEXER \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\COMM\stm32f4xx_it.xcl |  $
+\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\stm32f4xx_it.c
+  flags = "-out=\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\COMM\stm32f4xx_it.pbi" -f "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\COMM\stm32f4xx_it.xcl"
+
+build \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\COMM\system_stm32f4xx.pbi : INDEXER \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\COMM\system_stm32f4xx.xcl |  $
+\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\system_stm32f4xx.c
+  flags = "-out=\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\COMM\system_stm32f4xx.pbi" -f "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\COMM\system_stm32f4xx.xcl"
+
+build \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\main.pbi : INDEXER \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\main.xcl |  $
+\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\main.c
+  flags = "-out=\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\main.pbi" -f "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\main.xcl"
+
+build \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\uart2.pbi : INDEXER \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\uart2.xcl |  $
+\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\uart2.c
+  flags = "-out=\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\uart2.pbi" -f "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\uart2.xcl"
+
+build \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\sampleUart2.pbw : MAKEBROWSE \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\sampleUart2.pbd
+  flags = "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\sampleUart2.pbd" -output "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\sampleUart2.pbw"
+
+build \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\sampleUart2.pbd : PDBLINK \\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\COMM\stm32f4xx_it.pbi |  $
+\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\COMM\system_stm32f4xx.pbi $
+\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\main.pbi $
+\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\uart2.pbi
+  flags = -M "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\sampleUart2.pbd" "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\COMM\stm32f4xx_it.pbi" "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\COMM\system_stm32f4xx.pbi" "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\main.pbi" "\\10.10.141.253\23$ 자율형$ 공유폴더\Cortex-m4\Examples\sampleUart2_tim10_pwm_dcmotor_counter\Debug\BrowseInfo\uart2.pbi"
+

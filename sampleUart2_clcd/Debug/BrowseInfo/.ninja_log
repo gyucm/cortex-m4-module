@@ -1,0 +1,22 @@
+# ninja log v5
+1	73	7001320930000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_clcd/Debug/BrowseInfo/COMM/system_stm32f4xx.xcl	fde1d77f7cceba31
+4	82	7001320930000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_clcd/Debug/BrowseInfo/COMM/stm32f4xx_it.xcl	95cc654b999d81bb
+10	86	7001320930000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_clcd/Debug/BrowseInfo/main.xcl	f6652ca069b70ef0
+7	105	7001320930000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_clcd/Debug/BrowseInfo/STM32/stm32f4xx_usart.xcl	eee0a09bea5e7a36
+105	131	7001320938155675	C:/Users/IoT17/Desktop/Examples/sampleUart2_clcd/Debug/BrowseInfo/COMM/stm32f4xx_it.pbi	7f9f4b87197b57b7
+75	145	7001320930000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_clcd/Debug/BrowseInfo/STM32/stm32f4xx_gpio.xcl	9db8e3946eebc538
+83	153	7001320930000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_clcd/Debug/BrowseInfo/STM32/misc.xcl	f694183feeb774b3
+87	155	7001320930000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_clcd/Debug/BrowseInfo/STM32/stm32f4xx_rcc.xcl	5df81ee1b5234df1
+156	213	7001320930000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_clcd/Debug/BrowseInfo/uart2.xcl	5d0195328f13be57
+153	266	7001320939561593	C:/Users/IoT17/Desktop/Examples/sampleUart2_clcd/Debug/BrowseInfo/STM32/misc.pbi	a6d418778d26f469
+213	329	7001320940030231	C:/Users/IoT17/Desktop/Examples/sampleUart2_clcd/Debug/BrowseInfo/STM32/stm32f4xx_usart.pbi	de5293f66b43b577
+145	359	7001320940342655	C:/Users/IoT17/Desktop/Examples/sampleUart2_clcd/Debug/BrowseInfo/STM32/stm32f4xx_gpio.pbi	1547d995b4ba95b9
+132	364	7001320940498868	C:/Users/IoT17/Desktop/Examples/sampleUart2_clcd/Debug/BrowseInfo/COMM/system_stm32f4xx.pbi	937a3e8e9814c6f5
+267	389	7001320940655082	C:/Users/IoT17/Desktop/Examples/sampleUart2_clcd/Debug/BrowseInfo/STM32/stm32f4xx_rcc.pbi	cf19c2b320cf836a
+364	431	7001320941123725	C:/Users/IoT17/Desktop/Examples/sampleUart2_clcd/Debug/BrowseInfo/sampleUart2_part0.pbi	2dfa515fa15354aa
+329	449	7001320941279935	C:/Users/IoT17/Desktop/Examples/sampleUart2_clcd/Debug/BrowseInfo/main.pbi	6b718c684c069d75
+360	472	7001320941592371	C:/Users/IoT17/Desktop/Examples/sampleUart2_clcd/Debug/BrowseInfo/uart2.pbi	1b033a8f938a4faf
+389	480	7001320941592371	C:/Users/IoT17/Desktop/Examples/sampleUart2_clcd/Debug/BrowseInfo/sampleUart2_part1.pbi	972fc2f19193f008
+472	537	7001320942217923	C:/Users/IoT17/Desktop/Examples/sampleUart2_clcd/Debug/BrowseInfo/sampleUart2_part2.pbi	4bf9c5cc3bf3f157
+538	613	7001320942998275	C:/Users/IoT17/Desktop/Examples/sampleUart2_clcd/Debug/BrowseInfo/sampleUart2.pbd	ce31b79825e18b50
+614	1158	7001320948153407	C:/Users/IoT17/Desktop/Examples/sampleUart2_clcd/Debug/BrowseInfo/sampleUart2.pbw	f9b80d6ca2b48f8c

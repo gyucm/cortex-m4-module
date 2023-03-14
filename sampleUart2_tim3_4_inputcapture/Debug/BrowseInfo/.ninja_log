@@ -1,0 +1,56 @@
+# ninja log v5
+32	333	7000552260000000	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/COMM/system_stm32f4xx.xcl	c74963517c112083
+68	349	7000552260000000	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/main.xcl	5f89476e29b3b3c6
+98	377	7000552260000000	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/COMM/stm32f4xx_it.xcl	379f5c260d9754f9
+131	403	7000552260000000	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/uart2.xcl	3da42721661596e7
+395	519	7000552287446351	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/COMM/stm32f4xx_it.pbi	44ff69e714a2f5e1
+417	1074	7000552292910570	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/uart2.pbi	1e934a8e36c40b74
+341	1088	7000552292910570	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/COMM/system_stm32f4xx.pbi	72292137016eaf4d
+373	1209	7000552294160287	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/main.pbi	4c1d245abdd23391
+1217	1808	7000552300252587	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/sampleUart2.pbd	6054cd00a6956a3f
+1818	3487	7000552316818507	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/sampleUart2.pbw	e11b43b35365570e
+47	672	7000552376640793	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/main.pbi	4c1d245abdd23391
+682	1144	7000552381483447	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/sampleUart2.pbd	6054cd00a6956a3f
+1154	2935	7000552399135530	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/sampleUart2.pbw	e11b43b35365570e
+39	941	7000552512858619	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/main.pbi	4c1d245abdd23391
+954	1588	7000552519419569	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/sampleUart2.pbd	6054cd00a6956a3f
+1596	3588	7000552538946489	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/sampleUart2.pbw	e11b43b35365570e
+33	603	7000552803727414	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/main.pbi	4c1d245abdd23391
+609	1376	7000552811538071	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/sampleUart2.pbd	6054cd00a6956a3f
+1385	3346	7000552830908563	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/sampleUart2.pbw	e11b43b35365570e
+27	754	7000552993994981	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/uart2.pbi	1e934a8e36c40b74
+33	759	7000552994307401	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/main.pbi	4c1d245abdd23391
+762	1413	7000553000868350	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/sampleUart2.pbd	6054cd00a6956a3f
+1425	2918	7000553015710280	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/sampleUart2.pbw	e11b43b35365570e
+53	664	7000553074914529	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/uart2.pbi	1e934a8e36c40b74
+681	1152	7000553079757135	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/sampleUart2.pbd	6054cd00a6956a3f
+1161	2735	7000553095222265	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/sampleUart2.pbw	e11b43b35365570e
+59	734	7000553155676747	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/main.pbi	4c1d245abdd23391
+749	1258	7000553160832003	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/sampleUart2.pbd	6054cd00a6956a3f
+1269	2882	7000553176844030	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/sampleUart2.pbw	e11b43b35365570e
+18	453	7000556589299858	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/main.pbi	4c1d245abdd23391
+459	1090	7000556595704594	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/sampleUart2.pbd	6054cd00a6956a3f
+1095	2501	7000556609607553	//10.10.141.253/23 자율형 공유폴더/Cortex-m4/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/sampleUart2.pbw	e11b43b35365570e
+8	76	7001304900000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/COMM/system_stm32f4xx.xcl	56533a40d19bcdde
+15	93	7001304900000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/COMM/stm32f4xx_it.xcl	d89134cfab2d3ceb
+17	115	7001304900000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/STM32/stm32f4xx_gpio.xcl	dd2a021e53325763
+77	134	7001304900000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/STM32/stm32f4xx_rcc.xcl	fa19b1ab04e35c38
+12	148	7001304900000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/STM32/misc.xcl	39d94ec21d7d95ac
+96	152	7001304900000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/STM32/stm32f4xx_usart.xcl	970ae77a723d2c50
+115	177	7001304900000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/STM32/stm32f4xx_tim.xcl	7d45968aaf04264c
+134	197	7001304900000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/main.xcl	4665656e40074fce
+149	276	7001304907821527	C:/Users/IoT17/Desktop/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/STM32/stm32f4xx_gpio.pbi	79f427e39cf183ba
+153	282	7001304907977736	C:/Users/IoT17/Desktop/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/COMM/system_stm32f4xx.pbi	ccc563f49b0b89fe
+179	311	7001304908133962	C:/Users/IoT17/Desktop/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/STM32/stm32f4xx_rcc.pbi	bcdaf0ed35cf5c43
+197	328	7001304908446376	C:/Users/IoT17/Desktop/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/COMM/stm32f4xx_it.pbi	c7eb85e61d4ea8fc
+277	335	7001304900000000	C:/Users/IoT17/Desktop/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/uart2.xcl	c304a33c2a43a54e
+283	404	7001304909071227	C:/Users/IoT17/Desktop/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/STM32/misc.pbi	769dff1ad201b94b
+328	465	7001304909696087	C:/Users/IoT17/Desktop/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/STM32/stm32f4xx_tim.pbi	dc15a9b7ef560b20
+404	475	7001304909852292	C:/Users/IoT17/Desktop/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/sampleUart2_part0.pbi	7e5d468007bf898f
+312	540	7001304910477146	C:/Users/IoT17/Desktop/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/main.pbi	6aa4b099ae1ca0a0
+336	567	7001304910789570	C:/Users/IoT17/Desktop/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/uart2.pbi	95d45f32f7738d8d
+467	568	7001304910789570	C:/Users/IoT17/Desktop/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/sampleUart2_part1.pbi	4c6c7c3099c8c9ab
+476	600	7001304911102006	C:/Users/IoT17/Desktop/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/STM32/stm32f4xx_usart.pbi	35ee0c16e4eadc2b
+601	694	7001304912039267	C:/Users/IoT17/Desktop/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/sampleUart2_part2.pbi	6d6d63c092362db7
+694	777	7001304912820336	C:/Users/IoT17/Desktop/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/sampleUart2.pbd	32e6acd1a9da2a74
+778	1375	7001304918600869	C:/Users/IoT17/Desktop/Examples/sampleUart2_tim3_4_inputcapture/Debug/BrowseInfo/sampleUart2.pbw	964f0f33a8e2f4f3
